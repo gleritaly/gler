@@ -1,0 +1,30 @@
+.join {
+    color: white;
+    font-size: 5rem;
+    font-family: 'Poppins',sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    height: 100%;
+    
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+@media(max-width:576px){
+    .join{
+        font-size: 3rem;
+    }
+}

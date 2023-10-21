@@ -1,0 +1,10 @@
+body {
+    padding-top: 70px; 
+   background: black;
+   scroll-behavior: smooth;
+ 
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
