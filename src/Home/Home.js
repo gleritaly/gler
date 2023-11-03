@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from "react";
 import "../Home/home.css"
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -7,11 +7,21 @@ import 'aos/dist/aos.css'
 import Carousel from '../Carousel/Carousel'
 import Carousel2 from '../Carousel2/Carousel2'
 import Carousel3 from '../Carousel3/Carousel3'
-
+import HashLoader from "react-spinners/HashLoader";
 
 
 
 const Home = () => {
+
+  const [loading, setLoading] = useState(false)
+
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 5000)
+  }
+    , []);
   // Creating a react hook to add a scroll animation....
   useEffect(() => {
     Aos.init({ duration: 2000 })
@@ -42,15 +52,16 @@ const Home = () => {
 
   return (
     <div className='gler'>
-      <div className="buton">
+    
+          <div className="buton">
         <button className="dot active" onClick={() => handleClickScroll("section-1")}>
         </button>
         <button className="dot" onClick={() => handleClickScroll("section-2")}>
         </button>
         <button className="dot" onClick={() => handleClickScroll("section-3")}>
         </button>
-      </div>
-      <section className='gler1' id='section-1'>
+       </div>
+       <section className='gler1' id='section-1'>
         <div className="tx1" data-aos="fade-up">
           <h1>Raffaello <br /> Series</h1>
         </div>
@@ -65,10 +76,10 @@ const Home = () => {
           </p>
         </div>
         <Carousel />
-      </section>
+       </section>
+ 
 
-
-      <section className='gler2' id='section-2'>
+       <section className='gler2' id='section-2'>
         <div className="ty1" data-aos="fade-right">
           <h1>Tiziano <br /> Series</h1>
         </div>
@@ -100,60 +111,6 @@ const Home = () => {
         </div>
         <Carousel3 />
       </section>
-
-
-      <div className="container1" style={{ display: 'flex' }} >
-        <div className="firstcard"></div>
-        <div className="card w-100">
-          <div className="card__body">
-            <div className="card__content">
-              <h2 className="card__title" >POWER TRACKS</h2>
-              <p className="card__text">STEP INTO A REALM WHERE THE MOST EXQUISITE POWER TRACKS AWAITS YOUR COMMAND.
-                POWERED BY INNOVATION. CRAFTED BY BRILLIANCE. </p>
-              <p className="card__text2">
-                TOUCHED BY SOPHISTICATION.
-              </p>
-
-            </div>
-          </div>
-          <img src="https://gleritaly.sirv.com/gler/imgcard1.png" className="card__image" />
-        </div>
-      </div>
-
-      <div className="container1">
-        <div className="card w-100">
-          <div className="card__body">
-            <div className="card__content">
-              <h2 className="card__title">
-                ADAPTERS
-              </h2>
-              <p className="card__text">THE UNIQUE TEMPERAMENT OF RAFFAELLO AND TIZIANO SERIES. WITH VARIETY OF FEATURES </p>
-              <p className="card__text2">
-                TOUCHED BY SOPHISTICATION.
-              </p>
-            </div>
-          </div>
-          <img src="https://gleritaly.sirv.com/gler/imgcard2.png" className="card__image" />
-        </div>
-      </div>
-
-      <div className="container1" style={{ display: 'flex' }}>
-        <div className="firstcard"></div>
-        <div className="card w-100">
-          <div className="card__body">
-            <div className="card__content">
-              <h2 className="card__title">POWER TRACKS</h2>
-              <p className="card__text"> DIFFERENT DESIGNS AND VARIANTS FOR THE MOST ELEGANT LOOK.
-                POWERED BY INNOVATION. CRAFTED BY BRILLIANCE. </p>
-              <p className="card__text2">
-                TOUCHED BY SOPHISTICATION.
-              </p>
-            </div>
-          </div>
-          <img src="https://gleritaly.sirv.com/gler/imgcard3.png" className="card__image" />
-        </div>
-      </div>
-
     </div>
 
   )

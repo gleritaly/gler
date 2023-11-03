@@ -5,7 +5,7 @@ import Footer from './Footer/Footer';
 import Home from './Home/Home';
 
 
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -27,6 +27,8 @@ import Raf from './Raffaello/Raf';
 import Tiz from './Tiziano/Tiz';
 import Power from './Powertrack/Power';
 
+// import HashLoader from "react-spinners/HashLoader";
+
 
 
 
@@ -34,6 +36,16 @@ import Power from './Powertrack/Power';
 
 
 function App() {
+  
+  // const [loading, setLoading] = useState(false)
+
+  // useEffect(() => {
+  //   setLoading(true)
+  //   setTimeout(() => {
+  //     setLoading(false)
+  //   }, 4000)
+  // }
+  //   , []);
   useEffect(() => { window.scrollTo({ top: 0, behavior: 'smooth' }); }
     , []);
 
@@ -43,6 +55,21 @@ function App() {
       <ScrollToTop />
       <div className="App">
 
+      {/* {
+        loading ?
+          <HashLoader
+
+            color={"#d50606"}
+            loading={loading}
+            size={150}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+            className='loadder'
+          />
+          : 
+          
+          <> */}
+          
         <Navbar />
         <Switch>
           <Route exact path="/"><Home /></Route>
@@ -65,6 +92,11 @@ function App() {
         </Switch>
 
         <Footer />
+          {/* </>
+          } */}
+      
+    
+       
       </div>
 
     </Router>

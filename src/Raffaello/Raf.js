@@ -27,7 +27,8 @@ function Raf() {
                                         <p>Wall-mounted power tracks</p>
                                     </div>
                                     <div className="hi">
-                                        <h5>Price : $269</h5>
+                                         <h5><button className='xx'>Buy Now</button></h5>
+
                                         <li className='add-icon'> <AiFillPlusCircle /></li> 
                                     </div>
                                 </div>
@@ -43,7 +44,8 @@ function Raf() {
                                         <p>Wall-mounted power tracks</p>
                                     </div>
                                     <div className="hi">
-                                        <h5>Price : $269</h5>
+                                         <h5><button className='xx'>Buy Now</button></h5>
+
                                         <li className='add-icon'> <AiFillPlusCircle /></li> 
                                     </div>
                                 </div>
@@ -60,7 +62,7 @@ function Raf() {
                                         <p>Wall-mounted power tracks</p>
                                     </div>
                                     <div className="hi">
-                                        <h5>Price : $269</h5>
+                                        <h5><button className='xx'>Buy Now</button></h5>
                                         <li className='add-icon'> <AiFillPlusCircle /></li> 
                                     </div>
                                 </div>
@@ -76,24 +78,7 @@ function Raf() {
                                         <p>Wall-mounted power tracks</p>
                                     </div>
                                     <div className="hi">
-                                        <h5>Price : $269</h5>
-                                        <li className='add-icon'> <AiFillPlusCircle /></li> 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6 col-xl-3 col-xxl-3">
-                            <div className="cardc " data-aos="fade-up">
-                                <div className="imgc"> <img src="https://gleritaly.sirv.com/gler/23.png" className="card-img-top" alt="..." /></div>
-                               
-                                <div className="card-body1">
-                                    <div className="hh">
-                                        <h4>Raffaello Series</h4>
-                                        <p>Adapter socket with matt housing</p>
-                                    </div>
-                                    <div className="hi">
-                                        <h5>Price : $49</h5>
+                                    <h5><button className='xx'>Buy Now</button></h5>
                                         <li className='add-icon'> <AiFillPlusCircle /></li> 
                                     </div>
                                 </div>
@@ -110,14 +95,16 @@ function Raf() {
                                         <p>Adapter socket with matt housing</p>
                                     </div>
                                     <div className="hi">
-                                        <h5>Price : $49</h5>
+                                         <h5><button className='xx'>Buy Now</button></h5>
+
                                         <li className='add-icon'> <AiFillPlusCircle /></li> 
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-md-3 col-sm-6 col-xl-3 col-xxl-3">
-                            <div className="cardc" data-aos="fade-up">
+                            <div className="cardc " data-aos="fade-up">
                                 <div className="imgc"> <img src="https://gleritaly.sirv.com/gler/25.png" className="card-img-top" alt="..." /></div>
                                
                                 <div className="card-body1">
@@ -126,14 +113,15 @@ function Raf() {
                                         <p>Adapter socket with matt housing</p>
                                     </div>
                                     <div className="hi">
-                                        <h5>Price : $49</h5>
+                                         <h5><button className='xx'>Buy Now</button></h5>
+
                                         <li className='add-icon'> <AiFillPlusCircle /></li> 
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6 col-xl-3 col-xxl-3">
-                            <div className="cardc " data-aos="fade-up">
+                            <div className="cardc" data-aos="fade-up">
                                 <div className="imgc"> <img src="https://gleritaly.sirv.com/gler/26.png" className="card-img-top" alt="..." /></div>
                                
                                 <div className="card-body1">
@@ -142,7 +130,25 @@ function Raf() {
                                         <p>Adapter socket with matt housing</p>
                                     </div>
                                     <div className="hi">
-                                        <h5>Price : $49</h5>
+                                         <h5><button className='xx'>Buy Now</button></h5>
+
+                                        <li className='add-icon'> <AiFillPlusCircle /></li> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xl-3 col-xxl-3">
+                            <div className="cardc " data-aos="fade-up">
+                                <div className="imgc"> <img src="https://gleritaly.sirv.com/gler/27.png" className="card-img-top" alt="..." /></div>
+                               
+                                <div className="card-body1">
+                                    <div className="hh">
+                                        <h4>Raffaello Series</h4>
+                                        <p>Adapter socket with matt housing</p>
+                                    </div>
+                                    <div className="hi">
+                                         <h5><button className='xx'>Buy Now</button></h5>
+
                                         <li className='add-icon'> <AiFillPlusCircle /></li> 
                                     </div>
                                 </div>

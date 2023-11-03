@@ -24,7 +24,8 @@ function Tiz() {
                     <p>Wall-mounted power tracks</p>
                   </div>
                   <div className="hi">
-                    <h5>Price : $299</h5>
+                     <h5><button className='xx'>Buy Now</button></h5>
+
                     <li className='add-icon'> <AiFillPlusCircle /></li>
                   </div>
                 </div>
@@ -40,7 +41,8 @@ function Tiz() {
                     <p>Wall-mounted power tracks</p>
                   </div>
                   <div className="hi">
-                    <h5>Price : $299</h5>
+                     <h5><button className='xx'>Buy Now</button></h5>
+
                     <li className='add-icon'> <AiFillPlusCircle /></li>
                   </div>
                 </div>
@@ -57,7 +59,8 @@ function Tiz() {
                     <p>Wall-mounted power tracks</p>
                   </div>
                   <div className="hi">
-                    <h5>Price : $259</h5>
+                     <h5><button className='xx'>Buy Now</button></h5>
+
                     <li className='add-icon'> <AiFillPlusCircle /></li>
                   </div>
                 </div>
@@ -73,7 +76,8 @@ function Tiz() {
                     <p>Wall-mounted power tracks</p>
                   </div>
                   <div className="hi">
-                    <h5>Price : $259</h5>
+                     <h5><button className='xx'>Buy Now</button></h5>
+
                     <li className='add-icon'> <AiFillPlusCircle /></li>
                   </div>
                 </div>
@@ -90,7 +94,8 @@ function Tiz() {
                     <p>Adapter socket with matt housing</p>
                   </div>
                   <div className="hi">
-                    <h5>Price : $11.70</h5>
+                     <h5><button className='xx'>Buy Now</button></h5>
+
                     <li className='add-icon'> <AiFillPlusCircle /></li>
                   </div>
                 </div>
@@ -109,7 +114,8 @@ function Tiz() {
                     <p>Adapter socket with matt housing</p>
                   </div>
                   <div className="hi">
-                    <h5>Price : $9.70</h5>
+                     <h5><button className='xx'>Buy Now</button></h5>
+
                     <li className='add-icon'> <AiFillPlusCircle /></li>
                   </div>
                 </div>
@@ -125,7 +131,8 @@ function Tiz() {
                     <p>Adapter socket with matt housing</p>
                   </div>
                   <div className="hi">
-                    <h5>Price : $14.00</h5>
+                     <h5><button className='xx'>Buy Now</button></h5>
+
                     <li className='add-icon'> <AiFillPlusCircle /></li>
                   </div>
                 </div>
@@ -141,7 +148,8 @@ function Tiz() {
                     <p>Adapter socket with matt housing</p>
                   </div>
                   <div className="hi">
-                    <h5>Price : $11.70</h5>
+                     <h5><button className='xx'>Buy Now</button></h5>
+
                     <li className='add-icon'> <AiFillPlusCircle /></li>
                   </div>
                 </div>
