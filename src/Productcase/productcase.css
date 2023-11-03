@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+.one {
+    text-align: center;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 5;
+    text-transform: uppercase;
+
+}
+h2{
+    font-weight: 700;
+}
+
+.t1{
+    position: absolute;
+    margin-bottom: 150px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    width: 50%;
+ 
+
+}
+.t1 p, .t2 p, .t3 p, .t4 p, .t5 p {
+    font-size: 14px;
+}
+
+.t1 a, .t2 a, .t3 a, .t4 a{
+    font-size: 14px;
+    color: white;
+}
+.t5 a {
+    color: black;
+    
+}
+
+h2:hover{
+    color: #b70b0b;
+    cursor: pointer;
+}
+a:hover{
+  color: #b70b0b;
+  cursor: pointer;
+}
+.t2{
+    position: absolute;
+    margin-bottom: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    width: 20%;
+}
+
+.t3{
+    position: absolute;
+    margin-bottom: 150px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    width: 67%;
+}
+.t4{
+    position: absolute;
+    margin-bottom: 240px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    width: 60%;
+}
+.t5{
+    position: absolute;
+    margin-bottom: 250px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 15px;
+    width: 50%;
+}
+
+
+@media (min-width:240px) and (max-width:576px) {
+    
+    .t1 h2, .t2 h2, .t3 h2, .t4 h2, .t5 h2{
+        font-size: 10px;
+    }
+
+    .t1 p , .t2 p , .t3 p , .t4 p , .t5 p, .t1 a, .t2 a, .t3 a, .t4 a, .t5 a {
+        font-size: 5px;
+    }
+
+   
+
+
+    .t1{
+        margin-top: 150px;
+       
+    }
+    .t2{
+        margin-top: 50px;
+    }
+    .t3{
+        margin-top: 180px;
+    }
+    .t4{
+        margin-top: 200px;
+    }
+    .t5{
+        margin-top: 200px;
+    }
+   .t5 a{
+    color: white;
+   }
+     
+}
+
+@media (min-width:577px) and (max-width:767px) {
+
+    .t1 h2, .t2 h2, .t3 h2, .t4 h2, .t5 h2{
+        font-size: 15px;
+    }
+    .t1 p , .t2 p , .t3 p , .t4 p , .t5 p, .t1 a, .t2 a, .t3 a, .t4 a, .t5 a {
+        font-size: 8px;
+    }
+
+    .t1{
+        margin-top: 85px;
+       
+    }
+    .t2{
+        margin-top: 50px;
+    }
+    .t3{
+        margin-top: 180px;
+    }
+    .t4{
+        margin-top: 200px;
+    }
+    .t5{
+        margin-top: 200px;
+    }
+   .t5 a{
+    color: white;
+   }
+     
+}
+
+@media (min-width:768px) and (max-width:992px) {
+
+    .t1 h2, .t2 h2, .t3 h2, .t4 h2, .t5 h2{
+        font-size: 18px;
+    }
+    .t1 p , .t2 p , .t3 p , .t4 p , .t5 p, .t1 a, .t2 a, .t3 a, .t4 a, .t5 a {
+        font-size: 12px;
+    }
+
+    .t1{
+        margin-top: 80px;
+       
+    }
+    .t2{
+        margin-top: 50px;
+    }
+    .t3{
+        margin-top: 180px;
+    }
+    .t4{
+        margin-top: 70px;
+       
+    }
+    .t5{
+        margin-top: 150px;
+    }
+   .t5 a{
+    color: white;
+   }
+
+}
+
+@media (min-width:1400px) {
+    .t1 h2, .t2 h2, .t3 h2, .t4 h2, .t5 h2{
+        font-size: 30px;
+    }
+    .t1 p , .t2 p , .t3 p , .t4 p , .t5 p, .t1 a, .t2 a, .t3 a, .t4 a, .t5 a {
+        font-size: 20px;
+    }
+}

@@ -1,46 +1,108 @@
 import React, { useEffect } from 'react'
 import "../Home/home.css"
-import {img1, img2, img3, imgcard1, imgcard2, imgcard3} from '../image/image.js'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-import Slide from '../Slide/Slide'
+
+
+import Carousel from '../Carousel/Carousel'
+import Carousel2 from '../Carousel2/Carousel2'
+import Carousel3 from '../Carousel3/Carousel3'
+
+
+
+
 const Home = () => {
   // Creating a react hook to add a scroll animation....
   useEffect(() => {
     Aos.init({ duration: 2000 })
   }, [])
+
+  const handleClickScroll = (sectionElement) => {
+    console.log(sectionElement);
+
+    let element = undefined
+
+    if (sectionElement === "section-1") {
+      element = document.getElementById('section-1');
+    }
+    else if (sectionElement === "section-2") {
+      element = document.getElementById('section-2');
+    }
+    else {
+      element = document.getElementById('section-3');
+    }
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+
+
+
+
   return (
-    <div>
-      <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <h1 className='mainheading' data-aos="fade-up">WELCOME TO GLER</h1>
-            <p className='extratxt' data-aos="fade-up">Presenting the Brand New Series of Adapter</p>
-            <img src={img1} className="d-block w-100" alt="image1" />
-          </div>
-          <div className="carousel-item">
-            <h1 className='mainheading' data-aos="fade-up">WELCOME TO GLER</h1>
-            <p className='extratxt' data-aos="fade-up">Presenting the Brand New Series of Adapter</p>
-            <img src={img2} className="d-block w-100" alt="image2" />
-          </div>
-          <div className="carousel-item">
-            <h1 className='mainheading' data-aos="fade-up">WELCOME TO GLER</h1>
-            <p className='extratxt' data-aos="fade-up">Presenting the Brand New Series of Adapter</p>
-            <img src={img3} className="d-block w-100 " alt="image3" />
-          </div>
-        </div>
-        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Previous</span>
+    <div className='gler'>
+      <div className="buton">
+        <button className="dot active" onClick={() => handleClickScroll("section-1")}>
         </button>
-        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Next</span>
+        <button className="dot" onClick={() => handleClickScroll("section-2")}>
+        </button>
+        <button className="dot" onClick={() => handleClickScroll("section-3")}>
         </button>
       </div>
-      
+      <section className='gler1' id='section-1'>
+        <div className="tx1" data-aos="fade-up">
+          <h1>Raffaello <br /> Series</h1>
+        </div>
+        <div className="tx2" data-aos="fade-up">
+          <p>Raffaello Series CLA</p>
+        </div>
+        <div className="tx3" data-aos="fade-up">
+          <p>Installation &nbsp;:&nbsp; Wall-Mounted/Recessed
+            <br /> Power &nbsp;:&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8000W
+            <br />Voltage &nbsp;:&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 250V
+            <br />Current &nbsp;:&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;32A max
+          </p>
+        </div>
+        <Carousel />
+      </section>
 
-      <div className="container" style={{ display: 'flex' }} data-aos="fade-up">
+
+      <section className='gler2' id='section-2'>
+        <div className="ty1" data-aos="fade-right">
+          <h1>Tiziano <br /> Series</h1>
+        </div>
+        <div className="ty2" data-aos="fade-right">
+          <p> The unique temperament of the Titian <br /> series is graceful and
+            soft, like the <br /> works of the painter Tiziano Vecell.</p>
+        </div>
+        <div className="ty3" data-aos="fade-right">
+          <p>Tiziano Series CLA</p>
+        </div>
+        <div className="ty4" data-aos="fade-right">
+          <p>Installation &nbsp;:&nbsp; Wall-Mounted/Recessed
+            <br /> Power &nbsp;:&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8000W
+            <br />Voltage &nbsp;:&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 250V
+            <br />Current &nbsp;:&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;32A max
+          </p>
+        </div>
+        <Carousel2 />
+      </section>
+
+
+
+      <section className='gler3' id='section-3'>
+        <div className="tz1" data-aos="fade-up">
+          <h1 >Power  Tracks</h1>
+        </div>
+        <div className="tz2" data-aos="fade-up">
+          <p>Step into a realm where the most exquisite power tracks awaits your command</p>
+        </div>
+        <Carousel3 />
+      </section>
+
+
+      <div className="container1" style={{ display: 'flex' }} >
         <div className="firstcard"></div>
         <div className="card w-100">
           <div className="card__body">
@@ -54,10 +116,11 @@ const Home = () => {
 
             </div>
           </div>
-          <img src={imgcard1} className="card__image" />
+          <img src="https://gleritaly.sirv.com/gler/imgcard1.png" className="card__image" />
         </div>
       </div>
-      <div className="container" data-aos="fade-up">
+
+      <div className="container1">
         <div className="card w-100">
           <div className="card__body">
             <div className="card__content">
@@ -70,10 +133,11 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <img src={imgcard2} className="card__image" />
+          <img src="https://gleritaly.sirv.com/gler/imgcard2.png" className="card__image" />
         </div>
       </div>
-      <div className="container" style={{ display: 'flex' }} data-aos="fade-up">
+
+      <div className="container1" style={{ display: 'flex' }}>
         <div className="firstcard"></div>
         <div className="card w-100">
           <div className="card__body">
@@ -86,11 +150,12 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <img src={imgcard3} className="card__image" />
+          <img src="https://gleritaly.sirv.com/gler/imgcard3.png" className="card__image" />
         </div>
       </div>
-      <div className="slide"> <Slide/></div>  
+
     </div>
+
   )
 }
 export default Home

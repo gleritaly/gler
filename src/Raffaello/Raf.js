@@ -1,0 +1,161 @@
+import React from 'react'
+import "../Raffaello/raf.css"
+import { AiFillPlusCircle } from 'react-icons/ai';
+
+function Raf() {
+    return (
+        <div style={{background:'white'}}>
+            <section className="raf">
+                <div className="ra" data-aos="fade-up">
+                    <h3>Raffaello Series</h3>
+                    <p> The Unique temperament of the Raphael series is serene,
+                        harmonious, symmetrical, perfect and tranquil, like the works
+                        of Raphael Sanzio.Raphael series is made of zirconium sand
+                        oxidation technology, providing a skin like touch.</p>
+                </div>
+
+                <div className="container" >
+                    <div className="row" >
+                        
+                    <div class="col-md-3 col-sm-6 col-xl-3 col-xxl-3">
+                            <div className="cardc "  data-aos="fade-right">
+                                <div className="imgc"> <img src="https://gleritaly.sirv.com/gler/POWER%20TRACKS.bip.538.png" className="card-img-top" alt="..." /></div>
+                               
+                                <div className="card-body1">
+                                    <div className="hh">
+                                        <h4>Raffaello Series</h4>
+                                        <p>Wall-mounted power tracks</p>
+                                    </div>
+                                    <div className="hi">
+                                        <h5>Price : $269</h5>
+                                        <li className='add-icon'> <AiFillPlusCircle /></li> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xl-3 col-xxl-3">
+                            <div className="cardc " data-aos="fade-right">
+                                <div className="imgc"> <img src="https://gleritaly.sirv.com/gler/POWER%20TRACKS.bip.536.png" className="card-img-top" alt="..." /></div>
+                               
+                                <div className="card-body1">
+                                    <div className="hh">
+                                        <h4>Raffaello Series</h4>
+                                        <p>Wall-mounted power tracks</p>
+                                    </div>
+                                    <div className="hi">
+                                        <h5>Price : $269</h5>
+                                        <li className='add-icon'> <AiFillPlusCircle /></li> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xl-3 col-xxl-3">
+                            <div className="cardc " data-aos="fade-right">
+                                <div className="imgc"> <img src="https://gleritaly.sirv.com/gler/POWER%20TRACKS.bip.537.png" className="card-img-top" alt="..." /></div>
+                               
+                                <div className="card-body1">
+                                    <div className="hh">
+                                        <h4>Raffaello Series</h4>
+                                        <p>Wall-mounted power tracks</p>
+                                    </div>
+                                    <div className="hi">
+                                        <h5>Price : $269</h5>
+                                        <li className='add-icon'> <AiFillPlusCircle /></li> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xl-3 col-xxl-3">
+                            <div className="cardc " data-aos="fade-right">
+                                <div className="imgc" > <img src="https://gleritaly.sirv.com/gler/POWER%20TRACKS.bip.538.png" className="card-img-top" alt="..." /></div>
+                               
+                                <div className="card-body1">
+                                    <div className="hh">
+                                        <h4>Raffaello Series</h4>
+                                        <p>Wall-mounted power tracks</p>
+                                    </div>
+                                    <div className="hi">
+                                        <h5>Price : $269</h5>
+                                        <li className='add-icon'> <AiFillPlusCircle /></li> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xl-3 col-xxl-3">
+                            <div className="cardc " data-aos="fade-up">
+                                <div className="imgc"> <img src="https://gleritaly.sirv.com/gler/23.png" className="card-img-top" alt="..." /></div>
+                               
+                                <div className="card-body1">
+                                    <div className="hh">
+                                        <h4>Raffaello Series</h4>
+                                        <p>Adapter socket with matt housing</p>
+                                    </div>
+                                    <div className="hi">
+                                        <h5>Price : $49</h5>
+                                        <li className='add-icon'> <AiFillPlusCircle /></li> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xl-3 col-xxl-3">
+                            <div className="cardc " data-aos="fade-up">
+                                <div className="imgc"> <img src="https://gleritaly.sirv.com/gler/24.png" className="card-img-top" alt="..." /></div>
+                               
+                                <div className="card-body1">
+                                    <div className="hh">
+                                        <h4>Raffaello Series</h4>
+                                        <p>Adapter socket with matt housing</p>
+                                    </div>
+                                    <div className="hi">
+                                        <h5>Price : $49</h5>
+                                        <li className='add-icon'> <AiFillPlusCircle /></li> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xl-3 col-xxl-3">
+                            <div className="cardc" data-aos="fade-up">
+                                <div className="imgc"> <img src="https://gleritaly.sirv.com/gler/25.png" className="card-img-top" alt="..." /></div>
+                               
+                                <div className="card-body1">
+                                    <div className="hh">
+                                        <h4>Raffaello Series</h4>
+                                        <p>Adapter socket with matt housing</p>
+                                    </div>
+                                    <div className="hi">
+                                        <h5>Price : $49</h5>
+                                        <li className='add-icon'> <AiFillPlusCircle /></li> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xl-3 col-xxl-3">
+                            <div className="cardc " data-aos="fade-up">
+                                <div className="imgc"> <img src="https://gleritaly.sirv.com/gler/26.png" className="card-img-top" alt="..." /></div>
+                               
+                                <div className="card-body1">
+                                    <div className="hh">
+                                        <h4>Raffaello Series</h4>
+                                        <p>Adapter socket with matt housing</p>
+                                    </div>
+                                    <div className="hi">
+                                        <h5>Price : $49</h5>
+                                        <li className='add-icon'> <AiFillPlusCircle /></li> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+ 
+                    </div>
+                </div>
+
+              
+            </section>
+        </div>
+    )
+}
+
+export default Raf

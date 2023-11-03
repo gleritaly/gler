@@ -17,76 +17,64 @@ const Footer = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
-    
+
     return (
-        <div>
-            <footer className="new_footer_area bg_color" data-aos="fade-up">
-                <div className="new_footer_top">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-3 col-md-6 mb-4" data-aos="fade-right">
-                                <div className="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style={{ visibility: 'visible', animationDelay: '0.2s', animationName: 'fadeInLeft' }}>
-                                    <h3 className="f-title f_600 t_color f_size_18">Get in Touch</h3>
-                                    <p>Don’t miss any updates of our new design and products.!</p>
-                                    <form action="#" className="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
-                                        <input type="text" name="EMAIL" className="form-control memail" placeholder="Email" />
-                                        <button className="btn btn_get btn_get_two" type="submit">Subscribe</button>
-                                        <p className="mchimp-errmessage" style={{ display: "none" }}></p>
-                                        <p className="mchimp-sucmessage" style={{ display: "none" }}></p>
-                                    </form>
-                                </div>
-                            </div>
-                            <div className="col-lg-3 col-md-6 col-6" >
-                                <div className="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style={{ visibility: 'visible', animationDelay: '0.4s', animationName: 'fadeInLeft' }}>
-                                    <h3 className="f-title f_600 t_color f_size_18">About Us</h3>
-                                    <ul className="list-unstyled f_list" style={{ textDecoration: 'none' }}>
-                                        <li ><a style={{ textDecoration: 'none' }} href="/About" >Company</a></li>
-                                        <li><a style={{ textDecoration: 'none' }} href="/Product">Products</a></li>
-                                        <li><a style={{ textDecoration: 'none' }} href="/Product">Series</a></li>
-                                        <li><a style={{ textDecoration: 'none' }} href="/Product">Variants</a></li>
-                                        <li><a style={{ textDecoration: 'none' }} href="#">Shop</a></li>
-                                        <li><a style={{ textDecoration: 'none' }} href="#">Coupons</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className="col-lg-3 col-md-6 col-6">
-                                <div className="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style={{ visibility: 'visible', animationDelay: '0.6s', animationName: 'fadeInLeft' }}>
-                                    <h3 className="f-title f_600 t_color f_size_18">Help</h3>
-                                    <ul className="list-unstyled f_list">
-                                        <li><a style={{ textDecoration: 'none' }} href="#">FAQ</a></li>
-                                        <li><a style={{ textDecoration: 'none' }} href="#">Term &amp; conditions</a></li>
-                                        <li><a style={{ textDecoration: 'none' }} href="#">Reporting</a></li>
-                                        <li><a style={{ textDecoration: 'none' }} href="#">Documentation</a></li>
-                                        <li><a style={{ textDecoration: 'none' }} href="#">Support Policy</a></li>
-                                        <li><a style={{ textDecoration: 'none' }} href="#">Privacy</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className="col-lg-3 col-md-6">
-                                <div className="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style={{ visibility: 'visible', animationDelay: '0.8s', animationName: 'fadeInLeft' }}>
-                                    <h3 className="f-title f_600 t_color f_size_18 mt-4">Team Solutions</h3>
-                                    <div className="f_social_icon">
-                                        <a href="#" className="fab fa-facebook"><BsFacebook/></a>
-                                        <a href="#" className="fab fa-twitter"><FaTwitter/></a>
-                                        <a href="https://instagram.com/gleritaly?igshid=OGQ5ZDc2ODk2ZA==" className="fab fa-linkedin"><BsInstagram/></a>
-                                        <a href="https://www.linkedin.com/in/gler-italy-89a49628a?trk=contact-info" className="fab fa-pinterest"><BsLinkedin/></a>
-                                    </div>
-                                </div>
-                            </div>
+        <div >
+            <footer className="site-footer" >
+                <div className="container">
+                    <div className="row">
+                        <div className="col-sm-12 col-md-6" data-aos="fade-up">
+                           <a style={{ textDecoration: 'none' }}  href="/About"><h6>About Us</h6></a> 
+                            <p className="text-justify">GLER is determined to rise as the unparalleled pioneer of
+                                precision and innovation, wielding a transformative force that
+                                sparks progress and unveils uncharted horizons. Our unwavering
+                                dedication propels us toward a radiant era, where we redefine
+                                the energy industry with sophisticated and ground-breaking
+                                solutions. We are commited to create safe, secure
+                                environments, spreading energy and possibilities everywhere,
+                                where limitations no longer hold us back, and life feels like
+                                a treasure chest of opportunities.</p>
+                        </div>
+
+                        <div className="col-xs-6 col-md-3" data-aos="fade-up">
+                            <h6>Categories</h6>
+                            <ul className="footer-links">
+                                <li><a style={{ textDecoration: 'none' }} href="/">Home</a></li>
+                                <li><a style={{ textDecoration: 'none' }} href="/Product">Product Center</a></li>
+                                <li><a  style={{ textDecoration: 'none' }} href="/Raffaello/Raffaello">Raffaello Series</a></li>
+                                <li><a style={{ textDecoration: 'none' }}  href="/Tiziano/Tiziano">Tiziaon Series</a></li>
+                                <li><a style={{ textDecoration: 'none' }}  href="/Power/Power">Power Tracks</a></li>
+
+                            </ul>
+                        </div>
+
+                        <div className="col-xs-6 col-md-3" data-aos="fade-up">
+                            <h6>Quick Links</h6>
+                            <ul className="footer-links">
+                                <li><a  style={{ textDecoration: 'none' }} href="/About">About Us</a></li>
+                                <li><a style={{ textDecoration: 'none' }}  href="/Contact">Contact Us</a></li>
+                                <li><a  style={{ textDecoration: 'none' }} href="/Privacy">Privacy Policy</a></li>
+                                <li><a  style={{ textDecoration: 'none' }} href="">Sitemap</a></li>
+                            </ul>
                         </div>
                     </div>
-                    <div className="footer_bg">
-                        <div className="footer_bg_one"></div>
-                        <div className="footer_bg_two"></div>
-                    </div>
+                    <hr />
                 </div>
-                <div className="footer_bottom">
-                    <div className="container">
-                        <div className="row align-items-center">
-                            <div className="col-lg-6 col-sm-7">
-                                <p className="mb-0 f_400">© Gler.. 2023 All rights reserved.</p>
-                            </div>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-8 col-sm-6 col-xs-12">
+                            <p className="copyright-text">Copyright &copy; 2023 All Rights Reserved by &nbsp;
+                                <a style={{ textDecoration: 'none' }}  href="/">Gler</a>.
+                            </p>
+                        </div>
 
+                        <div className="col-md-4 col-sm-6 col-xs-12" >
+                            <ul className="social-icons">
+                                <li><a style={{ textDecoration: 'none' }}  className="facebook" href="#"><BsFacebook /></a></li>
+                                <li><a  style={{ textDecoration: 'none' }} className="twitter" href="#"><FaTwitter /></a></li>
+                                <li><a  style={{ textDecoration: 'none' }} className="insta" href="https://instagram.com/gleritaly?igshid=OGQ5ZDc2ODk2ZA=="><BsInstagram /></a></li>
+                                <li><a  style={{ textDecoration: 'none' }} className="linkedin" href="https://www.linkedin.com/in/gler-italy-89a49628a?trk=contact-info"><BsLinkedin /></a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -95,4 +83,4 @@ const Footer = () => {
     )
 }
 
-export default Footer
+export default Footer;

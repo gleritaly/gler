@@ -1,5 +1,5 @@
 import React,{useEffect} from "react";
-import {imgpost, imgpost2, ceopic} from '../image/image.js'
+
 
 import "../About/about.css";
 
@@ -16,7 +16,7 @@ const About = () => {
     <div className="about-us">
       <div className="about-us-header">
         <div className="post1" data-aos="fade-right">
-          <img src={imgpost} className="img-fluid" alt="..."></img>
+          <img src="https://gleritaly.sirv.com/gler/imgpost.webp" className="img-fluid" alt="..."></img>
         </div>
 
         <div className="header-row">
@@ -64,7 +64,7 @@ const About = () => {
       </div>
 
       <div className="main-row">
-        <div className="content-card">
+        <div className="content-cardz">
           <div className="heading-text">
             <p data-aos="fade-right">Security Certification</p>
           </div>
@@ -81,7 +81,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="content-card">
+        <div className="content-cardz">
           <div className="heading-text">
             <p data-aos="fade-right">Environmental Certification</p>
           </div>
@@ -104,12 +104,12 @@ const About = () => {
         </div>
 
         <div className="post2" data-aos="fade-up">
-          <img src={imgpost2} class="img-fluid" alt="..."></img>
+          <img src="https://gleritaly.sirv.com/gler/imgpost2.webp" className="img-fluid" alt="..."></img>
         </div>
       </div>
       <div className="desc">
         <div className="ceo">
-          <img src={ceopic} class="img-thumbnail" alt="ceo-image" data-aos="fade-right"/>
+          <img src="https://gleritaly.sirv.com/gler/ceopic.webp" className="img-thumbnail" alt="ceo-image" data-aos="fade-right"/>
         </div>
         <div className="content-card desc2">
           <div className="heading-text">
@@ -120,7 +120,7 @@ const About = () => {
             <div className="card-body">
               <p className="card-text" data-aos="fade-right">
                 Saurabh Saggar is a distinguished business leader with over 15 years
-                of invaluable experience in the power track industry. His remarkable
+                of invaluable experience in the power track industry. <br />His remarkable
                 journey has been characterized by visionary leadership, paralleled
                 management skilss, and a commitment to driving innovation in the
                 business world.

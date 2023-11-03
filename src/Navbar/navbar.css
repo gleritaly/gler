@@ -1,39 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
-
-.navbar{
+.navbar {
     position: fixed;
     z-index: 1000;
     width: 100%;
-    border-bottom: 1px solid rgb(0, 0, 0);
-    background: white !important;
-    top: 0px;
+    border-bottom: 1px solid rgb(133, 131, 131);
+    background: rgb(0, 0, 0) !important;
+    top: -4px;
 
 }
 
 .navbar .navbar-nav .nav-item {
-    padding: 0 32px ;
+    padding: 0 30px;
     position: relative;
     bottom: 2px;
     font-family: 'Poppins', sans-serif;
-    font-size: small;
-    text-transform: uppercase;
+    font-size: 14px;
+    color: #949292 !important;
+    display: flex;
     z-index: 1000;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: rgb(255, 255, 255)
 }
 
 
 .navbar-nav .nav-item .nav-link:hover {
-    color: rgb(86, 86, 86);
-    text-shadow: 2px 2px 4px #8b8989;
+    color: rgb(146, 145, 145);
+    /* text-shadow: 2px 2px 4px #ffffff; */
 }
 
-@media (max-width:576px){
-    .navbar-brand img{
+.icon {
+    position: relative;
+    left: 35vh;
+    padding: 5px 10px;
+    display: flex;
+    list-style: none;
+}
+
+.icon li {
+    padding: 0px 5px;
+}
+
+.icon li a:hover {
+    color: #b70b0b;
+}
+
+.icon a {
+    color: white;
+}
+
+.dropdown {
+    list-style: none;
+    padding: 0px;
+}
+ .dropdown a{
+   text-decoration: none ;
+   color: #a29f9f;
+   font-size: 10px;
+   font-family: 'Poppins', sans-serif;
+
+}
+
+
+
+
+@media (max-width:576px) {
+    .navbar-brand img {
         position: relative;
         margin-left: -30px;
     }
 
-   
+
     .navbar-nav .nav-link {
         padding-right: 0;
         margin-left: -18px;
@@ -42,7 +82,16 @@
     .navbar-nav .nav-item .nav-link :hover {
         color: rgb(86, 86, 86);
         text-shadow: 2px 2px 4px #000000;
-      }
+    }
+
+
+
+    .icon {
+        left: -4px;
+    }
+  
+
+
 
 }
 
@@ -52,46 +101,194 @@
         padding-right: 0;
         margin-left: 8px;
     }
+
+    .icon {
+        left: 22px;
+    }
 }
 
-@media (min-width:769px) and (max-width:992px){
+@media (min-width:769px) and (max-width:992px) {
     .navbar-nav .nav-link {
-        padding-right: 0;
-        margin-left: 10px;
+        padding: 10px;
+
+    }
+
+    .icon {
+        left: 24px;
     }
 }
 
-@media (min-width:992px){
+@media (min-width:992px) and (max-width:1199px) {
 
     .navbar .navbar-nav .nav-item {
-        padding: 0px 16px;
-        position: relative;
-        bottom: 2px;
+        padding: 0px 9px;
+    }
+
+    .icon {
+        left: 10vh;
+        padding: 2px;
+    }
+
+    .dropdown {
+        display: none;
+        width: 100%;
+        border-radius: 5px;
+        margin-left: -8px;
+    }
+    
+    .nav-link.active+.dropdown {
+        display: none;
+    }
+    
+    .nav-item:hover .dropdown {
+        display: block;
+        position: absolute;
+        top: 100%;
+    
+        left: 8px;
+        background-color: #060606;
+        /* Add your desired background color */
+        border: 1px solid #818181;
+        /* Add your desired border styles */
+        padding: 10px;
+    }
+    
+    .dropdown li {
+        list-style: none;
+        padding: 5px 0;
+    }
+    
+    .dropdown li a {
+        text-decoration: none;
+        color: #a29f9f;
+        font-size: 12px;
         font-family: 'Poppins', sans-serif;
-        font-size: small;
-        text-transform: uppercase;
-        z-index: 1000;
+        align-items: center;
+        display: grid;
+        justify-content: center;
+        padding: 2px;
     }
+    
+    .dropdown li:hover {
+        background-color: #181818;
+        /* Add your desired hover background color */
+        border-radius: 5px;
+    }
+    
 }
 
-@media (min-width:1200px){
+@media (min-width:1200px) and (max-width:1399px) {
 
-    
-    
-    .navbar .navbar-nav .nav-item {
-        padding: 0 35px ;
-       
-        
-    }
-}
 
-@media(min-width:1400px){
 
     .navbar .navbar-nav .nav-item {
-        padding: 0 45px ;
+        padding: 0 10px;
         position: relative;
-        left: 5vh;
-        
+        left: 15vh;
     }
+    .dropdown {
+        display: none;
+        width: 100%;
+        border-radius: 5px;
+        margin-left: -8px;
+    }
+    
+    .nav-link.active+.dropdown {
+        display: none;
+    }
+    
+    .nav-item:hover .dropdown {
+        display: block;
+        position: absolute;
+        top: 100%;
+    
+        left: 8px;
+        background-color: #060606;
+        /* Add your desired background color */
+        border: 1px solid #818181;
+        /* Add your desired border styles */
+        padding: 10px;
+    }
+    
+    .dropdown li {
+        list-style: none;
+        padding: 5px 0;
+    }
+    
+    .dropdown li a {
+        text-decoration: none;
+        color: #a29f9f;
+        font-size: 12px;
+        font-family: 'Poppins', sans-serif;
+        align-items: center;
+        display: grid;
+        justify-content: center;
+        padding: 2px;
+    }
+    
+    .dropdown li:hover {
+        background-color: #181818;
+        /* Add your desired hover background color */
+        border-radius: 5px;
+    }
+    
+}
+
+@media(min-width:1400px) {
+
+    .navbar .navbar-nav .nav-item {
+        padding: 0px 15px;
+        position: relative;
+        left: 20vh;
+        font-size: 15px;
+
+    }
+
+    .dropdown {
+        display: none;
+        width: 100%;
+        border-radius: 5px;
+        margin-left: -8px;
+    }
+    
+    .nav-link.active+.dropdown {
+        display: none;
+    }
+    
+    .nav-item:hover .dropdown {
+        display: block;
+        position: absolute;
+        top: 100%;
+    
+        left: 8px;
+        background-color: #060606;
+        /* Add your desired background color */
+        border: 1px solid #818181;
+        /* Add your desired border styles */
+        padding: 10px;
+    }
+    
+    .dropdown li {
+        list-style: none;
+        padding: 5px 0;
+    }
+    
+    .dropdown li a {
+        text-decoration: none;
+        color: #a29f9f;
+        font-size: 12px;
+        font-family: 'Poppins', sans-serif;
+        align-items: center;
+        display: grid;
+        justify-content: center;
+        padding: 2px;
+    }
+    
+    .dropdown li:hover {
+        background-color: #181818;
+        /* Add your desired hover background color */
+        border-radius: 5px;
+    }
+    
 
 }
