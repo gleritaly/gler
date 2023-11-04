@@ -1,7 +1,6 @@
 import About from './About/About';
 
 import './App.css';
-import Footer from './Footer/Footer';
 import Home from './Home/Home';
 
 
@@ -27,7 +26,7 @@ import Raf from './Raffaello/Raf';
 import Tiz from './Tiziano/Tiz';
 import Power from './Powertrack/Power';
 
-// import HashLoader from "react-spinners/HashLoader";
+import PropagateLoader from "react-spinners/PropagateLoader";
 
 
 
@@ -36,16 +35,16 @@ import Power from './Powertrack/Power';
 
 
 function App() {
-  
-  // const [loading, setLoading] = useState(false)
 
-  // useEffect(() => {
-  //   setLoading(true)
-  //   setTimeout(() => {
-  //     setLoading(false)
-  //   }, 4000)
-  // }
-  //   , []);
+  const [loading, setLoading] = useState(false)
+
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 3000)
+  }
+    , []);
   useEffect(() => { window.scrollTo({ top: 0, behavior: 'smooth' }); }
     , []);
 
@@ -54,49 +53,49 @@ function App() {
     <Router>
       <ScrollToTop />
       <div className="App">
+        {
+          loading ?
+          <div className="loadder">
+            <PropagateLoader
 
-      {/* {
-        loading ?
-          <HashLoader
+              color={"#d50606"}
+              loading={loading}
+              size={15}
+              aria-label="Loading Spinner"
+              data-testid="loader"
+            
+            />
+              </div>
+            :
 
-            color={"#d50606"}
-            loading={loading}
-            size={150}
-            aria-label="Loading Spinner"
-            data-testid="loader"
-            className='loadder'
-          />
-          : 
-          
-          <> */}
-          
-        <Navbar />
-        <Switch>
-          <Route exact path="/"><Home /></Route>
-          <Router path="/Product"><Product /></Router>
-          <Router path="/Productcase"><Productcase/> </Router>
-          
-          <Router path="/About"><About /></Router>
-          <Router path="/Join">  <Join /></Router>
-        </Switch>
-        <Switch>
-         <Router path="/Kitchen/Kitchen"><Kitchen/></Router>
-         <Router path="/Office/Office"><Office/></Router>
-         <Router path="/Commercial/Commercial"><Commercial/></Router>
-         <Router path="/Laboratory/Laboratory"><Laboratory/></Router>
-         <Router path="/Other/Other"><Other/></Router>
+            <>
+
+              <Navbar />
+              <Switch>
+                <Route exact path="/"><Home /></Route>
+                <Router path="/Product"><Product /></Router>
+                <Router path="/Productcase"><Productcase /> </Router>
+
+                <Router path="/About"><About /></Router>
+                <Router path="/Join">  <Join /></Router>
+              </Switch>
+              <Switch>
+                <Router path="/Kitchen/Kitchen"><Kitchen /></Router>
+                <Router path="/Office/Office"><Office /></Router>
+                <Router path="/Commercial/Commercial"><Commercial /></Router>
+                <Router path="/Laboratory/Laboratory"><Laboratory /></Router>
+                <Router path="/Other/Other"><Other /></Router>
+
+                <Router path="/Raffaelo/Raf"><Raf /></Router>
+                <Router path="/Tiziano/Tiz"><Tiz /></Router>
+                <Router path="/Powertrack/Power"><Power /></Router>
+              </Switch>             
+            </>
          
-         <Router path="/Raffaelo/Raf"><Raf/></Router>
-         <Router path="/Tiziano/Tiz"><Tiz/></Router>
-         <Router path="/Powertrack/Power"><Power/></Router>
-        </Switch>
+        }
 
-        <Footer />
-          {/* </>
-          } */}
-      
-    
-       
+
+
       </div>
 
     </Router>

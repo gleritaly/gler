@@ -105,7 +105,7 @@ const Navbar = () => {
               </li>
 
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/Join">Join Now</a>
+                <Link className="nav-link active" aria-current="page" to="/Join">Join Now</Link>
               </li>
 
               <ul className="icon">

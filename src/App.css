@@ -8,3 +8,24 @@ body {
   html{
     scroll-behavior: smooth;
   }
+.loadder{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30vh;
+  background-color: black;
+  background: black;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .loadder{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 35vh;
+  }
+}

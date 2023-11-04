@@ -107,6 +107,10 @@
 
  @media (min-width:240px) and (max-width:576px) {
 
+  .buton{
+    display: none;
+  }
+
   .tx1 h1{
     font-size: 15px;
     margin: 0px 0px 80px 150px;
@@ -125,7 +129,7 @@
     margin: 35px 0 0px 20px;
   } 
   .ty2 p{
-    font-size: 4px;
+    font-size: 8px;
     margin: 75px  0px 0 20px;
   }
   .ty3 p{
@@ -213,8 +217,14 @@
     margin: 220px 0 0 315px;
   }
  }
+ .buton{
+  display: none;
+}
 
  @media (min-width:768px) and (max-width:992px) {
+  .buton{
+    display: none;
+  }
 
 
   .tx1 h1{

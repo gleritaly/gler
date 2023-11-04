@@ -1,11 +1,40 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import HashLoader from "react-spinners/HashLoader";
 import "../Raffaello/raf.css"
 import { AiFillPlusCircle } from 'react-icons/ai';
+import Footer from '../Footer/Footer';
 
 function Raf() {
+
+    const [loading, setLoading] = useState(false)
+
+    useEffect(() => {
+      setLoading(true)
+      setTimeout(() => {
+        setLoading(false)
+      }, 2000)
+    }
+      , []);
     return (
         <div style={{background:'white'}}>
-            <section className="raf">
+
+{
+loading ?
+          <div className="loadder">
+            <HashLoader
+
+              color={"#d50606"}
+              loading={loading}
+              size={70}
+              aria-label="Loading Spinner"
+              data-testid="loader"
+
+            />
+          </div>
+          :
+           <>
+           
+           <section className="raf">
                 <div className="ra" data-aos="fade-up">
                     <h3>Raffaello Series</h3>
                     <p> The Unique temperament of the Raphael series is serene,
@@ -160,6 +189,11 @@ function Raf() {
 
               
             </section>
+            <Footer/>
+           </>
+}
+
+
         </div>
     )
 }
